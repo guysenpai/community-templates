@@ -7,6 +7,7 @@
   packages = [
     pkgs.nodejs_20
     pkgs.pnpm
+    pkgs.git
   ];
   # Sets environment variables in the workspace
   env = {};
@@ -15,6 +16,7 @@
     extensions = [
       "angular.ng-template"
       "nrwl.angular-console"
+      "esbenp.prettier-vscode"
     ];
     workspace = {
       # Runs when a workspace is first created with this `dev.nix` file
